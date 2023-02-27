@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/aibar/dotfiles/.git'
+let g:netrw_dirhist_8='/home/aibar'
+let g:netrw_dirhist_7='/home/aibar/.config'
+let g:netrw_dirhist_6='/sys/devices/software'
+let g:netrw_dirhist_5='/sys/devices/software/power'
+let g:netrw_dirhist_4='/sys/devices/software'
+let g:netrw_dirhist_3='/sys/devices'
+let g:netrw_dirhist_2='/sys/devices/power'
+let g:netrw_dirhist_1='/sys/devices'
+let g:netrw_dirhist_0='/sys'

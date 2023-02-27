@@ -1,0 +1,57 @@
+#!/bin/sh
+
+# Use neovim for vim when possible.
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+
+# adds verbosity where we like it and shortens common commands.
+alias \
+    x="startx" \
+    wls="iwlist wlan0 scan | grep \(Channel" \
+    nf="neofetch" \
+    l="ls -la" \
+    n="nmtui" \
+    m="alsamixer" \
+    bat="cat /sys/class/power_supply/BAT?/capacity" \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -v" \
+	mkd="mkdir -pv" \
+	yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner" \
+  	ka="killall" \
+	g="git" \
+    gc="git clone" \
+	trem="transmission-remote" \
+	YT="youtube-viewer" \
+	rb="sudo reboot" \
+    sdn="sudo shutdown -h now" \
+	f="$FILE" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	p="doas apt install" \
+    pq="doas apt search" \
+    pqd="doas apt update" \
+    pqd0="doas apt upgrade" \
+    pc="doas apt remove" \
+    pw="doas apt-get purge" \
+    c="clear" \
+    h="htop" \
+    doom="~/.emacs.d/bin/doom" \
+    r="ncmpcpp" \
+    mk="doas make clean install"
+
+# adds color to commands.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
+
+# This alias is important. It enables the `pauseallmpv` command.
+alias mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)"
+
+# Some other stuff
+alias \
+	magit="nvim -c MagitOnly" \
+	ref="shortcuts >/dev/null; source ~/.config/shortcutrc"
