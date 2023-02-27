@@ -1,7 +1,7 @@
 # Voidrice
 hello!
 
-here's my dotfiles.
+here's my dotfile.
 
 
 
